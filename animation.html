@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .h{
+            border:2px solid black;
+            background-color: darkblue;
+            height:100px;
+            width:100px;
+            animation-name:anime;
+            animation-duration:5s;
+            position:relative;
+            margin-left: 250px;
+            margin-top:100px;
+     
+
+        }
+        @keyframes anime{
+            0%{
+                left:0px;
+                top:0px;
+                background-color: darkblue;
+            }
+            25%{left:400px;
+                top:0px;
+            background-color:red;}
+
+            50%{
+                left:400px;
+                top:200px;
+                background-color:yellow;
+
+            }
+            75%{
+                left:0px;
+                top:200px;
+                background-color:greenyellow;
+
+            }
+            100%{
+                left:0px;
+                top:0px;
+                background-color:blueviolet;
+
+            }
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="h">
+
+    </div>
+</body>
+</html>

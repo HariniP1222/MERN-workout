@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .k1{
+
+            border:3px solid rgb(1, 0, 0);
+            
+            width:1000px;
+            height:150px;
+
+        }
+        .k2{
+
+            border:3px solid rgb(1, 0, 0);
+            
+            width:1000px;
+            height:150px;
+
+        }
+
+        @media screen and (min-width:300px)
+        {
+            .k1{
+                background-color:blue;
+                height:50px;
+            }
+        }
+        
+        @media screen and (min-width:500px)
+        {
+            .k1{
+                background-color:greenyellow;
+                height:100px;
+            }
+        }
+        @media screen and (min-width:1000px)
+        {
+            .k1{
+                background-color:red;
+                height:150px;
+            }
+        }
+
+        @media screen and (max-width:2000px)
+        {
+            .k2{
+                background-color:blue;
+            }
+        }
+        
+        @media screen and (max-width:800px)
+        {
+            .k2{
+                background-color:greenyellow;
+            }
+        }
+        @media screen and (max-width:500px)
+        {
+            .k2{
+                background-color:red;
+               
+            }
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="k1"></div>
+    <br><br>
+    <div class="k2"></div>
+</body>
+</html>

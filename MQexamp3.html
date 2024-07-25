@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        header{
+            background-color: darkseagreen;
+            text-align: center;
+            width:1500px;
+        }
+        .sec{
+            display: grid;
+            grid-template-columns:repeat(4,200px);
+            column-gap:150px;
+            margin-left:50px;
+        }
+        .sec>div{
+            border:3px solid black;
+            height:250px;
+            width:300px;
+        }
+        .s1{
+            background-color: rgb(189, 238, 238);
+        }
+        .s2{
+            background-color: rgb(56, 140, 140);
+        }
+        .s3{
+            background-color: rgb(0, 113, 113);
+        }
+        .s4{
+            background-color: rgb(0, 113, 113);
+        }
+        .secc{
+            display: grid;
+            grid-template-columns:repeat(4,200px);
+            column-gap:250px;
+        }
+        .secc>div{
+            border:3px solid black;
+            height:250px;
+            width:400px;
+            margin-left: 50px;
+        }
+        footer{
+
+            background-color: gray;
+            height:30px;
+            width:1500px;
+            text-align: center;
+        }
+        .sc1{
+            background-color: rgb(189, 238, 238);
+        }
+        .sc2{
+            background-color: rgb(56, 140, 140);
+        }
+        .sc3{
+            background-color: rgb(0, 113, 113);
+        }
+       
+        @media screen and (max-width:800px)
+        {
+            .sec{
+                grid-template-columns:repeat(2,200px);
+                row-gap:10px;
+            }
+            .secc{
+                grid-template-columns:repeat(1,200px);
+                row-gap:10px;
+            }
+            header{
+                width:800px;
+            }
+            footer{
+                width:800px;
+            }
+            .secc>div{
+                width:700px;
+                height:200px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>hello every one!!</h1>
+    </header>
+    <div class="sec">
+        <div class="s1"></div>
+        <div class="s2"></div>
+        <div class="s3"></div>
+        <div class="s4"></div>
+    </div>
+    <br><br>
+    <div class="secc">
+        <div class="sc1"></div>
+        <div class="sc2"></div>
+        <div class="sc3"></div>
+       
+    </div>
+    <br><br>
+    <br><br>
+    <footer>
+        <p>to end......</p>
+    </footer>
+</body>
+</html>
